@@ -21,8 +21,16 @@ print(var)
 var = "\u0041lways look on the bright side of life."
 print(var)
 
+# var = "\U0041lways look on the bright side of life."
+# print(var)
 
+var = "\U00000041lways look on the bright side of life."
+print(var)
 
+print("\u03B1")
+print("\U0001f40d")
 
+print("\N{Grinning Face}")
+print("\U0001F600")
 
 
