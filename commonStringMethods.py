@@ -55,7 +55,44 @@ print(f'|{name}|')
 print(f'|{name.strip(' ')}|')
 print(f'|{name.strip('ab')}|')
 
+print('Python' + ' ' + 'rocks' + '!')
 
+data = 'Jones,Peter'
+split_data = data.split(',')
+print(split_data)
+
+data = 'Jones,Peter,100'
+split_data = data.split(',')
+print(split_data)
+
+data = 'Jones,Peter'
+last_name, first_name = data.split(',')
+print(first_name, last_name)
+
+data = ['item 1', 'item 2', 'item 3']
+print(', '.join(data))
+print(','.join('ABCD'))
+
+print('rock' in 'python rocks!')
+print('Rock' in 'python rocks!')
+print('Rock'.casefold() in 'python rocks!'.casefold())
+
+print(1 in (1,2,3))
+print('abc' in ('abc', 'def'))
+
+print('Python rocks'.startswith('Python'))
+print('Python rocks'.endswith('rocks'))
+print('Python rocks'.casefold().endswith('rocks'.casefold()))
+
+print('========== Substring ==========')
+message = "To every action there is always an equal and opposite reaction."
+print(message.index('every'))
+#print(message.index('Newton'))
+print(message.find('Newton'))
+
+print([1,2,3,4].index(2))
+#print([1,2,3,4].find(2))
+print(2 in [1,2,3,4])
 
 
 
