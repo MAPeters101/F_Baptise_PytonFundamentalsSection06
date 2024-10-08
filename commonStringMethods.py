@@ -85,7 +85,7 @@ print('Python rocks'.endswith('rocks'))
 print('Python rocks'.casefold().endswith('rocks'.casefold()))
 
 print('========== Substring ==========')
-message = "To every action there is always an equal and opposite reaction."
+message = "To every action there is a always an equal and opposite reaction."
 print(message.index('every'))
 #print(message.index('Newton'))
 print(message.find('Newton'))
@@ -94,6 +94,13 @@ print([1,2,3,4].index(2))
 #print([1,2,3,4].find(2))
 print(2 in [1,2,3,4])
 
+print(message.index('action', 9 + len('action')))
 
+from timeit import timeit
 
+message = "Imagination is more important than knowledge - Einstein"
+
+print(timeit("'Einstein' in message", globals=globals(), number=10_000_000))
+print(timeit("message.find('Einstein')", globals=globals(), number=10_000_000))
+print(timeit("message.index('Einstein')", globals=globals(), number=10_000_000))
 
