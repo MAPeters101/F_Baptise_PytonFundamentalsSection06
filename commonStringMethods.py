@@ -32,5 +32,31 @@ print(data.lower(), street)
 print(data.casefold(), street.casefold())
 print(data.casefold() == street.casefold())
 
+s1 = '\N{LATIN SMALL LETTER E WITH CIRCUMFLEX}'
+s2 = '\N{LATIN SMALL LETTER E}\N{COMBINING CIRCUMFLEX ACCENT}'
+print(s1, s2)
+print(s1 == s2)
+print(s1.upper() == s2.upper())
+print(s1.casefold() == s2.casefold())
+
+#  ========== Stripping ==========
+name = 'Peter '
+print(f'|{name}|')
+print(f'|{name.rstrip(' ')}|')
+
+
+name = '\t Peter\tJones\t '
+print(f'|{name}|')
+print(f'|{name.strip(' ')}|')
+print(f'|{name.strip()}|')
+
+name = 'ababPYTHONabab'
+print(f'|{name}|')
+print(f'|{name.strip(' ')}|')
+print(f'|{name.strip('ab')}|')
+
+
+
+
 
 
